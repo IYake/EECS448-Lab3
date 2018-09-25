@@ -1,0 +1,45 @@
+p
+{
+	background-color: orange;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	padding: 20px 20px 20px 20px;
+	width: 100%;
+	position: fixed;
+	left:0;
+	margin-top: 400px;
+	color: #464646;
+}
+iframe
+{
+	position: absolute;
+	right:10px;
+}
+body
+{
+	background-image:url('godzilla.jpg');
+	background-size: 800px 500px;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+h1
+{
+	font-size: 40px;
+	font-family:Times;
+}
+a
+{
+	background-color: orange;
+	color: black;
+}
+a:hover
+{
+	background-color: #94b7ef;
+	color: white;
+}
+div
+{
+	position:absolute;
+	bottom: 10px;
+}

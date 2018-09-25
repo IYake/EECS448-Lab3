@@ -1,0 +1,35 @@
+p
+{
+	background-color: blue;
+	color: white;
+	font-family: arial;
+	font-size: 22pt;
+}
+body
+{
+	background-color: red;
+	background-image:url(resources/img_flwr.gif);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+a
+{
+	background-color: blue;
+	color: red;
+}
+a:hover
+{
+	background-color: red;
+	color: black;
+}
+p
+{
+	color: blue;
+	background-color: yellow;
+}
+p.halloween
+{
+	color: orange;
+	background-color: black;
+}
