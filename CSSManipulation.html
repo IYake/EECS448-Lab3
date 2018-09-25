@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> CSS Manipulation </title>
+		<link href="resources/CSSManipulation.css" rel="stylesheet" type="text/css"/>
+	</head>
+
+	<body>
+	<h1>MEAT</h1>
+	<img src="resources/bacon.jpg" width="100%"></img>
+	<p id="meatParagraph">Bacon ipsum dolor amet hamburger flank leberkas salami, meatball doner swine picanha jowl filet mignon pig rump shank. Beef ham hock shankle rump, buffalo tri-tip chicken picanha. Kielbasa capicola strip steak rump tail porchetta bacon alcatra. Spare ribs meatball cow burgdoggen. Pork chop buffalo andouille porchetta, meatball ball tip cupim turducken ham hock. Prosciutto jowl kielbasa pancetta leberkas boudin cupim sausage pork, pork chop picanha beef ham.</p>
+	<form>
+		Border width: <input type="text" name="width" id="width"><br>
+		Border color (00-FF): <br>Red: <input type="text" name="color" id="borderRed"><br>
+							  Green: <input type="text" name="color" id="borderGreen"><br>
+							  Blue: <input type="text" name="color" id="borderBlue"><br><br>
+		Background color (00-FF): <br>Red: <input type="text" name="color" id="bgRed"><br>
+							  	  Green: <input type="text" name="color" id="bgGreen"><br>
+							  	  Blue: <input type="text" name="color" id="bgBlue"><br>
+	</form>
+	<button onclick="updateParagraph()">Change</button>
+	<script type="text/javascript">
+		function updateParagraph(){
+			let meat = document.getElementById("meatParagraph");
+
+			meat.style.borderWidth = document.getElementById("width").value+"px";
+			console.log(document.getElementById("width").value);
+
+			meat.style.backgroundColor = "#"+document.getElementById("borderRed").value+document.getElementById("borderGreen").value+document.getElementById("borderBlue").value;
+
+			meat.style.borderColor = "#"+document.getElementById("bgRed").value+document.getElementById("bgGreen").value+document.getElementById("bgBlue").value;
+		}
+	</script>
+	</body>
+</html>
