@@ -1,0 +1,56 @@
+
+h1
+{
+  text-align: center;
+  background-color: #323232;
+  color: white;
+  padding: 30px 30px 30px 30px;
+}
+
+#list
+{ 
+  width:500px;
+}
+
+#list ol 
+{ 
+  font-style:italic; 
+  font-family:Georgia, Times, serif; 
+  font-size:40px; 
+  color:#919191;  
+}
+
+#list ol li 
+{ 
+}
+
+#list ol li p 
+{ 
+  padding:8px; 
+  font-style:normal; 
+  font-family:Arial; 
+  font-size:13px; 
+  color:#eee; 
+  border-left: 1px solid #999; 
+}
+
+#list ol li p em 
+{ 
+  display:block; 
+}
+
+a:visited
+{
+  color: #75acf9;
+}
+
+a:link
+{
+  color: #0f6aff;
+}
+
+a:hover
+{
+  color: #e26a6a;
+}
+
