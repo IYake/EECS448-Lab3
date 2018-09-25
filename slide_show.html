@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Slide Show </title>
+	</head>
+
+	<body>
+		<script>
+		let current = 1;
+		function changePic(direction){
+			document.getElementById("currentImg").outerHTML="";
+			current = current + direction;
+			if (current < 1){
+				current = 5;
+			}
+			if (current > 5){
+				current = 1;
+			}
+			var img = document.createElement("img");
+			img.src = "resources/img"+current+".jpg";
+			img.id = "currentImg";
+			img.width = 300;
+			img.height = 300;
+			console.log("img"+current);
+			document.body.appendChild(img);
+		}
+		</script>
+
+		<button onclick="changePic(-1)">Previous</button>
+		<button onclick="changePic(1)">Next</button>
+		<image src="resources/img1.jpg" id="currentImg" height="300" width="300"></image>
+	</body>
+</html>
